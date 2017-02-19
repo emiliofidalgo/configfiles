@@ -1,0 +1,33 @@
+[user]
+    name = Emilio Garcia-Fidalgo
+    email = emilio.garcia@uib.es
+[github]
+    user = emiliofidalgo
+[color]
+    branch = auto
+    status = auto
+    interactive = auto
+    diff = auto
+    ui = auto
+[alias]
+    st = status
+    di = diff
+    wdi = diff --color-words
+    wdic = diff --color-words --cached
+    dic = diff --cached
+    co = checkout
+    ci = commit
+    br = branch
+    sta = stash
+    logpw = log -p --color-words
+[merge]
+    tool = vimdiff
+[apply]
+    whitespace = fix
+[core]
+    editor = /usr/bin/vim
+    autocrlf = input
+    safecrlf = true
+    fileMode = false
+[push]
+    default = simple
