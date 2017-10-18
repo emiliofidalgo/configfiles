@@ -5,6 +5,13 @@ function imgview
   rosrun image_view image_view image:=$1
 }
 
+function catp
+{
+  cd ~/ROS/lunar/src/$1
+  catkin build --this --cmake-args -DCMAKE_BUILD_TYPE=Release
+  cd -
+}
+
 alias catmk='cd ~/ROS/lunar; catkin build --cmake-args -DCMAKE_BUILD_TYPE=Release; cd -'
 alias catcd='cd ~/ROS/lunar'
 alias techo='rostopic echo'
