@@ -5,8 +5,8 @@ function imgview
   rosrun image_view image_view image:=$1
 }
 
-alias catmk='cd ~/ROS/kinetic; catkin_make --cmake-args -DCMAKE_BUILD_TYPE=Release; cd -'
-alias catcd='cd ~/ROS/kinetic'
+alias catmk='cd ~/ROS/lunar; catkin build --cmake-args -DCMAKE_BUILD_TYPE=Release; cd -'
+alias catcd='cd ~/ROS/lunar'
 alias techo='rostopic echo'
 alias tlist='rostopic list'
 alias tinfo='rostopic info'
