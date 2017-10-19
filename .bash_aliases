@@ -7,13 +7,13 @@ function imgview
 
 function catp
 {
-  cd ~/ROS/lunar/src/$1
+  cd ~/ROS/$ROS_DISTRO/src/$1
   catkin build --this --cmake-args -DCMAKE_BUILD_TYPE=Release
   cd -
 }
 
-alias catmk='cd ~/ROS/lunar; catkin build --cmake-args -DCMAKE_BUILD_TYPE=Release; cd -'
-alias catcd='cd ~/ROS/lunar'
+alias catmk='cd ~/ROS/$ROS_DISTRO; catkin build --cmake-args -DCMAKE_BUILD_TYPE=Release; cd -'
+alias catcd='cd ~/ROS/$ROS_DISTRO'
 alias techo='rostopic echo'
 alias tlist='rostopic list'
 alias tinfo='rostopic info'
