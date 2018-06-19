@@ -135,7 +135,8 @@ if [[ -z "$ROS_IP" ]]; then
 fi
 
 # Connecting to Pelican Platform
-#export ROS_MASTER_URI=http://192.168.0.7:11311
+export ROS_MASTER_URI=http://192.168.0.7:11311
+export ROS_IP=192.168.0.4
 
 # Connecting to Firefly Platform
 #export ROS_MASTER_URI=http://192.168.0.69:11311

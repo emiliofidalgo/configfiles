@@ -27,6 +27,11 @@ alias gitka='gitg --all'
 alias sshnig='ssh -XY -p2200 -t emilio@nig.uib.es'
 alias sshnigscreen='ssh -XY -p2200 -t emilio@nig.uib.es "screen -R emilio -D"'
 alias sshnigmat='ssh -XY -p2200 -t emilio@nig.uib.es "matlab"'
+alias sshpelican='ssh -XY -t srv@192.168.0.7'
+
+# SRV Logger
+alias logger_start='rosservice call /srv_logger/start_logging'
+alias logger_stop='rosservice call /srv_logger/stop_logging'
 
 # General
 alias sbash='source ~/.bashrc'
