@@ -38,3 +38,4 @@ alias sbash='source ~/.bashrc'
 alias vbash='vim ~/.bashrc'
 alias ..='cd ..'
 alias makej='make -j4'
+alias python="/usr/bin/python3.5"
