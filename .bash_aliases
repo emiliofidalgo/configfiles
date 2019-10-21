@@ -21,7 +21,7 @@ alias nlist='rosnode list'
 alias ninfo='rosnode info'
 
 # Git
-alias gitka='gitg --all'
+alias gitka='gitk --all'
 
 # SSH Login
 alias sshnig='ssh -XY -p2200 -t emilio@nig.uib.es'
