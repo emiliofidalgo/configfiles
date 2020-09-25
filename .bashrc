@@ -129,14 +129,23 @@ source /home/emilio/ROS/lunar/devel/setup.bash
 ################
 # SETUP ROS IP #
 ################
-export ROS_IP=`ifconfig  | grep 'inet ' | grep -v '127.0.0.1' | cut -d: -f2 | awk 'END{print $1}'`
+#export ROS_IP=`ifconfig  | grep 'inet ' | grep -v '127.0.0.1' | cut -d: -f2 | awk 'END{print $1}'`
 if [[ -z "$ROS_IP" ]]; then
   export ROS_IP=127.0.0.1
 fi
 
 # Connecting to Pelican Platform
-export ROS_MASTER_URI=http://192.168.0.7:11311
-export ROS_IP=192.168.0.4
+#export ROS_MASTER_URI=http://192.168.0.7:11311
+#export ROS_MASTER_URI=http://192.168.0.4:11311
+#export ROS_IP=192.168.0.4
 
 # Connecting to Firefly Platform
 #export ROS_MASTER_URI=http://192.168.0.69:11311
+
+# Connecting to Mussol Platform
+#export ROS_MASTER_URI=http://192.168.100.2:11311
+#export ROS_IP=192.168.100.98
+
+# Connecting to Terrestrial Platform
+#export ROS_MASTER_URI=http://192.168.0.5:11311
+#export ROS_IP=192.168.0.4
