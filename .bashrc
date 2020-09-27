@@ -123,8 +123,6 @@ export ROSCONSOLE_FORMAT='[${severity} - ${node}]: ${message}'
 ######################
 # SOURCE ROS VERSION #
 ######################
-source /home/emilio/ROS/lunar/devel/setup.bash
-#source /opt/ros/lunar/setup.bash
 
 ################
 # SETUP ROS IP #
