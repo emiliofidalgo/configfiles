@@ -12,7 +12,7 @@ function catp
   cd -
 }
 
-alias catmk='cd ~/ros/$ROS_DISTRO; catkin build --cmake-args -DCMAKE_BUILD_TYPE=Release; cd -'
+alias catmk='cd ~/ros/$ROS_DISTRO; catkin_make -DCMAKE_BUILD_TYPE=Release; cd -'
 alias catcd='cd ~/ros/$ROS_DISTRO'
 alias techo='rostopic echo'
 alias tlist='rostopic list'
