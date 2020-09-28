@@ -123,6 +123,8 @@ export ROSCONSOLE_FORMAT='[${severity} - ${node}]: ${message}'
 ######################
 # SOURCE ROS VERSION #
 ######################
+source /home/emilio/ros/noetic/devel/setup.bash
+#source /opt/ros/noetic/setup.bash
 
 ################
 # SETUP ROS IP #
@@ -147,3 +149,9 @@ fi
 # Connecting to Terrestrial Platform
 #export ROS_MASTER_URI=http://192.168.0.5:11311
 #export ROS_IP=192.168.0.4
+
+######################
+# CUDA		     #
+######################
+export PATH=/usr/local/cuda-11.1/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-11.1/lib64
