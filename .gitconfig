@@ -28,6 +28,6 @@
     editor = /usr/bin/vim
     autocrlf = input
     safecrlf = true
-    fileMode = false
+    filemode = false
 [push]
     default = simple
