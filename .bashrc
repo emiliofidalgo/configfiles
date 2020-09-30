@@ -117,7 +117,7 @@ if ! shopt -oq posix; then
 fi
 
 # ROS
-export EDITOR=subl
+export EDITOR=vim
 export ROSCONSOLE_FORMAT='[${severity} - ${node}]: ${message}'
 
 ######################
@@ -155,3 +155,7 @@ fi
 ######################
 export PATH=/usr/local/cuda-11.1/bin${PATH:+:${PATH}}
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-11.1/lib64
+
+# Install Ruby Gems to ~/gems
+export GEM_HOME="$HOME/gems"
+export PATH="$HOME/gems/bin:$PATH"
